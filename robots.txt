@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tukaramhankare.github.io/sitemap.xml

@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<!-- ====== EDIT THIS LINE if your live URL is different ====== -->
+<link rel="canonical" href="https://tukaramhankare.github.io/">
+
+<title>Tukaram Hankare – Python &amp; JavaScript Developer | Open-Source Tools Portfolio</title>
+<meta name="description" content="Tukaram Hankare is a Python and JavaScript developer. Explore his open-source projects: Void Vault encryption, File Fingerprint hashing, Backpack Emulator, TCES and System Monitor Live.">
+<meta name="author" content="Tukaram Hankare">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="keywords" content="Tukaram Hankare, tukaramhankare, Tukaram Hankare GitHub, Python developer, JavaScript developer, void-vault, file-fingerprint, backpack-emulator, TCES, system-monitor-live">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+
+<!-- Google Search Console: paste your verification code, then uncomment -->
+<!-- <meta name="google-site-verification" content="YOUR_CODE_HERE"> -->
+
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Tukaram Hankare">
+<meta property="og:title" content="Tukaram Hankare – Python &amp; JavaScript Developer">
+<meta property="og:description" content="Open-source tools by Tukaram Hankare: encryption, file hashing, command templates, battery monitoring and more.">
+<meta property="og:url" content="https://tukaramhankare.github.io/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Tukaram Hankare – Python &amp; JavaScript Developer">
+<meta name="twitter:description" content="Open-source tools by Tukaram Hankare.">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%230a84ff'/><stop offset='1' stop-color='%235e5ce6'/></linearGradient></defs><rect width='100' height='100' rx='22' fill='url(%23g)'/><text x='50' y='67' font-size='50' text-anchor='middle' font-family='system-ui' font-weight='700' fill='white'>TH</text></svg>">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://tukaramhankare.github.io/#website",
+      "url": "https://tukaramhankare.github.io/",
+      "name": "Tukaram Hankare",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://tukaramhankare.github.io/#profile",
+      "url": "https://tukaramhankare.github.io/",
+      "mainEntity": { "@id": "https://tukaramhankare.github.io/#person" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://tukaramhankare.github.io/#person",
+      "name": "Tukaram Hankare",
+      "alternateName": "tukaramhankare",
+      "url": "https://tukaramhankare.github.io/",
+      "jobTitle": "Software Developer",
+      "description": "Python and JavaScript developer building open-source desktop and browser tools.",
+      "knowsAbout": ["Python", "JavaScript", "HTML5", "CSS3", "Git", "GitHub", "Software architecture", "Algorithms"],
+      "sameAs": ["https://github.com/tukaramhankare"]
+    },
+    {
+      "@type": "ItemList",
+      "name": "Projects by Tukaram Hankare",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "url": "https://github.com/tukaramhankare/void-vault", "name": "void-vault" },
+        { "@type": "ListItem", "position": 2, "url": "https://github.com/tukaramhankare/file-fingerprint", "name": "file-fingerprint" },
+        { "@type": "ListItem", "position": 3, "url": "https://github.com/tukaramhankare/TCES", "name": "TCES" },
+        { "@type": "ListItem", "position": 4, "url": "https://github.com/tukaramhankare/backpack-emulator", "name": "backpack-emulator" },
+        { "@type": "ListItem", "position": 5, "url": "https://github.com/tukaramhankare/system-monitor-live", "name": "system-monitor-live" },
+        { "@type": "ListItem", "position": 6, "url": "https://github.com/tukaramhankare/master-package", "name": "master-package" }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+:root{
+  --bg:#f5f5f7; --card:#ffffff; --text:#1d1d1f; --sub:#6e6e73; --line:rgba(0,0,0,.08);
+  --accent:#0071e3; --accent-text:#0066cc; --accent-2:#5e5ce6; --nav:rgba(245,245,247,.72);
+  --chip:rgba(0,0,0,.05); --shadow:0 1px 2px rgba(0,0,0,.04),0 8px 30px rgba(0,0,0,.06);
+  --shadow-hover:0 2px 4px rgba(0,0,0,.05),0 18px 44px rgba(0,0,0,.12);
+  --font:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Segoe UI Variable Display","Segoe UI Variable","Segoe UI",system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Code","Cascadia Mono",Consolas,Menlo,monospace;
+  --r:24px;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#000; --card:#1c1c1e; --text:#f5f5f7; --sub:#a1a1a6; --line:rgba(255,255,255,.12);
+    --accent:#0a84ff; --accent-text:#2997ff; --accent-2:#7d7aff; --nav:rgba(0,0,0,.62);
+    --chip:rgba(255,255,255,.08); --shadow:0 0 0 1px rgba(255,255,255,.04);
+    --shadow-hover:0 0 0 1px rgba(255,255,255,.1),0 18px 44px rgba(0,0,0,.6);
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1.0625rem/1.55 var(--font);
+  letter-spacing:-.011em;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+a{color:var(--accent-text);text-decoration:none}
+a:hover{text-decoration:underline}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:8px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 max(22px,env(safe-area-inset-left))}
+.skip{position:absolute;left:-999px}
+.skip:focus{left:16px;top:16px;background:var(--card);padding:10px 16px;border-radius:10px;z-index:100}
+
+/* ---------- Glass navigation ---------- */
+.nav{position:sticky;top:0;z-index:50;background:var(--nav);
+  -webkit-backdrop-filter:saturate(180%) blur(24px);backdrop-filter:saturate(180%) blur(24px);
+  border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+.brand{font-weight:600;color:var(--text);font-size:1.0625rem;display:flex;align-items:center;gap:10px}
+.brand:hover{text-decoration:none}
+.logo{width:26px;height:26px;border-radius:8px;display:grid;place-items:center;color:#fff;font:700 .72rem var(--font);
+  background:linear-gradient(135deg,#0a84ff,#5e5ce6)}
+.links{display:flex;align-items:center;gap:26px;font-size:.9rem}
+.links a{color:var(--sub)}
+.links a:hover{color:var(--text);text-decoration:none}
+.pill{background:var(--text);color:var(--bg)!important;padding:7px 15px;border-radius:999px;font-weight:600}
+.pill:hover{opacity:.85}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;text-align:center;padding:84px 0 96px;isolation:isolate;overflow:hidden}
+.hero::before,.hero::after{content:"";position:absolute;z-index:-1;border-radius:50%;filter:blur(90px);opacity:.5}
+.hero::before{width:560px;height:560px;left:50%;top:-220px;margin-left:-520px;background:radial-gradient(circle,#0a84ff,transparent 70%)}
+.hero::after{width:520px;height:520px;left:50%;top:-120px;margin-left:40px;background:radial-gradient(circle,#bf5af2,transparent 70%);opacity:.38}
+h1{font-size:clamp(3rem,9vw,6rem);line-height:1.02;font-weight:700;letter-spacing:-.04em;margin:0 0 20px;
+  background:linear-gradient(180deg,var(--text) 30%,var(--sub));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:clamp(1.2rem,2.6vw,1.6rem);line-height:1.35;color:var(--sub);max-width:640px;margin:0 auto 34px;letter-spacing:-.02em;font-weight:400}
+.cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:999px;font-weight:600;font-size:1.0625rem;transition:transform .2s,background .2s}
+.btn:hover{text-decoration:none;transform:scale(1.03)}
+.btn.primary{background:var(--accent);color:#fff}
+.btn.ghost{color:var(--accent-text);background:var(--chip)}
+
+/* Live fingerprint panel */
+.glass{max-width:640px;margin:64px auto 0;text-align:left;border-radius:var(--r);padding:26px;
+  background:color-mix(in srgb,var(--card) 72%,transparent);border:1px solid var(--line);box-shadow:var(--shadow);
+  -webkit-backdrop-filter:blur(30px) saturate(160%);backdrop-filter:blur(30px) saturate(160%)}
+.glass .bar{display:flex;gap:7px;margin-bottom:18px}
+.glass .bar i{width:12px;height:12px;border-radius:50%;background:#ff5f57}
+.glass .bar i:nth-child(2){background:#febc2e}.glass .bar i:nth-child(3){background:#28c840}
+.glass label{display:block;font-size:.85rem;color:var(--sub);margin-bottom:8px;font-weight:500}
+.field{display:flex;gap:10px}
+.field input{flex:1;min-width:0;padding:13px 16px;border-radius:14px;border:1px solid var(--line);background:var(--bg);
+  color:var(--text);font:500 1rem var(--mono)}
+.field input:focus{outline:3px solid color-mix(in srgb,var(--accent) 45%,transparent);border-color:var(--accent)}
+.field button{padding:0 18px;border-radius:14px;border:0;background:var(--chip);color:var(--text);font:600 .9rem var(--font);cursor:pointer}
+.field button:hover{background:color-mix(in srgb,var(--text) 14%,transparent)}
+output{display:block;margin-top:16px;font:500 .92rem/1.6 var(--mono);word-break:break-all;color:var(--accent-text);min-height:3.2em}
+.glass small{display:block;margin-top:10px;color:var(--sub);font-size:.85rem}
+
+/* ---------- Sections ---------- */
+section{padding:96px 0}
+.head{text-align:center;margin-bottom:56px}
+h2{font-size:clamp(2.1rem,5vw,3.5rem);line-height:1.06;letter-spacing:-.035em;font-weight:700;margin:0 0 14px}
+.sub{font-size:1.3rem;color:var(--sub);max-width:620px;margin:0 auto;letter-spacing:-.015em;line-height:1.4}
+
+/* Bento grid */
+.bento{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(6,1fr);gap:20px}
+.tile{position:relative;background:var(--card);border-radius:var(--r);padding:32px;min-height:300px;display:flex;flex-direction:column;
+  overflow:hidden;box-shadow:var(--shadow);transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s}
+/* ---- Selection: hover / keyboard focus / press pops the repository and highlights it ---- */
+.tile{--ring:var(--accent);outline:2px solid transparent;outline-offset:0}
+.tile::before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .3s;
+  background:radial-gradient(90% 70% at 50% 0%,color-mix(in srgb,var(--ring) 16%,transparent),transparent 70%)}
+.tile:hover,.tile:has(a:focus-visible){transform:translateY(-8px) scale(1.025);z-index:3;
+  box-shadow:0 0 0 3px var(--ring),0 28px 60px color-mix(in srgb,var(--ring) 32%,transparent),0 12px 28px rgba(0,0,0,.18)}
+.tile:hover::before,.tile:has(a:focus-visible)::before{opacity:1}
+.tile:active{transform:translateY(-2px) scale(.99);transition-duration:.12s}
+.tile:hover .go,.tile:has(a:focus-visible) .go{text-decoration:underline;text-underline-offset:4px}
+.tile:hover .ico,.tile:has(a:focus-visible) .ico{transform:scale(1.1) rotate(-4deg)}
+.ico{transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.tile h3 a:focus-visible{outline:none}
+/* dim the others so the selected one stands out */
+.bento:has(.tile:hover) .tile:not(:hover),
+.bento:has(a:focus-visible) .tile:not(:has(a:focus-visible)){opacity:.5;transform:scale(.985);filter:saturate(.7)}
+.tile{transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s,opacity .35s,filter .35s}
+.tile.dark{--ring:#8a7dff}
+/* "More from GitHub" rows */
+#more-list li a{transition:background .2s,transform .2s,box-shadow .2s}
+#more-list li a:hover,#more-list li a:focus-visible{background:color-mix(in srgb,var(--accent) 12%,transparent);
+  transform:scale(1.015);box-shadow:inset 0 0 0 2px var(--accent);outline:none;text-decoration:none}
+/* Text selection colour */
+::selection{background:color-mix(in srgb,var(--accent) 35%,transparent);color:inherit}
+.tile.s2{grid-column:span 2}.tile.s3{grid-column:span 3}.tile.s4{grid-column:span 4}.tile.s6{grid-column:span 6;min-height:0}
+.ico{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;margin-bottom:22px;color:#fff;flex:none}
+.ico svg{width:26px;height:26px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.i-blue{background:linear-gradient(135deg,#0a84ff,#0040dd)}
+.i-violet{background:linear-gradient(135deg,#bf5af2,#5e5ce6)}
+.i-teal{background:linear-gradient(135deg,#40c8e0,#0a84ff)}
+.i-orange{background:linear-gradient(135deg,#ff9f0a,#ff453a)}
+.i-green{background:linear-gradient(135deg,#30d158,#00a86b)}
+.i-gray{background:linear-gradient(135deg,#8e8e93,#48484a)}
+.tile h3{font-size:1.6rem;line-height:1.15;letter-spacing:-.03em;margin:0 0 10px;font-weight:700}
+.tile h3 a{color:inherit}
+.tile h3 a::after{content:"";position:absolute;inset:0;z-index:2} /* whole tile clickable */
+.tile h3 a:hover{text-decoration:none}
+.tile p{margin:0 0 22px;color:var(--sub);flex:1;font-size:1.0625rem}
+.tags{display:flex;gap:8px;flex-wrap:wrap}
+.tag{font-size:.8rem;font-weight:600;padding:5px 12px;border-radius:999px;background:var(--chip);color:var(--sub)}
+.go{margin-top:18px;font-weight:600;font-size:.95rem;color:var(--accent-text)}
+.go::after{content:" ›"}
+
+/* Hero tile (dark, always) */
+.tile.dark{background:radial-gradient(120% 120% at 100% 0%,#3a2a8c 0%,#161638 45%,#0a0a1a 100%);color:#f5f5f7;min-height:380px}
+.tile.dark p{color:#b4b4cc;max-width:440px;font-size:1.15rem}
+.tile.dark .tag{background:rgba(255,255,255,.12);color:#d8d8ee}
+.tile.dark .go{color:#8ab8ff}
+.cipher{position:absolute;right:-10px;top:24px;font:500 .8rem/1.7 var(--mono);color:rgba(150,160,255,.28);
+  white-space:pre;pointer-events:none;user-select:none;mask-image:linear-gradient(90deg,transparent,#000 40%)}
+.hash-art{position:absolute;right:20px;bottom:18px;font:500 .72rem/1.5 var(--mono);color:var(--sub);opacity:.5;
+  text-align:right;pointer-events:none;user-select:none;max-width:60%;word-break:break-all}
+.batt{display:flex;align-items:center;gap:4px;margin:-6px 0 18px}
+.batt b{width:34px;height:16px;border-radius:5px;border:2px solid var(--sub);position:relative;display:block;opacity:.6}
+.batt b::before{content:"";position:absolute;inset:2px;width:62%;border-radius:2px;background:linear-gradient(90deg,#ff9f0a,#30d158)}
+.batt i{width:3px;height:7px;background:var(--sub);border-radius:0 2px 2px 0;opacity:.6}
+
+/* Slim row tile */
+.tile.slim{flex-direction:row;align-items:center;gap:22px;padding:24px 32px}
+.tile.slim .ico{margin:0}
+.tile.slim .txt{flex:1}
+.tile.slim h3{font-size:1.25rem;margin:0 0 4px}
+.tile.slim p{margin:0}
+
+/* Live GitHub list (Fluent-style rows) */
+.more{margin-top:48px;background:var(--card);border-radius:var(--r);box-shadow:var(--shadow);padding:10px 10px}
+.more h3{font-size:1.15rem;margin:18px 22px 6px;letter-spacing:-.02em}
+.more p.note{margin:0 22px 8px;color:var(--sub);font-size:.95rem}
+#more-list{list-style:none;margin:0;padding:0}
+#more-list li a{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 22px;border-radius:14px;color:var(--text)}
+#more-list li a:hover{background:var(--chip);text-decoration:none}
+#more-list .n{font-weight:600}
+#more-list .d{color:var(--sub);font-size:.92rem;display:block;font-weight:400}
+#more-list .l{font-size:.78rem;font-weight:600;padding:4px 10px;border-radius:999px;background:var(--chip);color:var(--sub);flex:none}
+.all{display:block;text-align:center;padding:16px;font-weight:600}
+
+/* About + skills */
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}
+.card{background:var(--card);border-radius:var(--r);padding:40px;box-shadow:var(--shadow)}
+.card h2{font-size:2rem;margin-bottom:16px;letter-spacing:-.03em}
+.card p{color:var(--sub);font-size:1.15rem;margin:0 0 20px}
+.goals{list-style:none;margin:0;padding:0;display:grid;gap:16px}
+.goals li{display:flex;gap:14px;align-items:flex-start}
+.goals .dot{width:30px;height:30px;border-radius:9px;background:var(--chip);display:grid;place-items:center;flex:none;color:var(--accent-text)}
+.goals .dot svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.goals strong{display:block}
+.goals span{color:var(--sub);font-size:.98rem}
+.skill{margin-bottom:24px}
+.skill h3{font-size:.85rem;font-weight:600;color:var(--sub);margin:0 0 10px;letter-spacing:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{padding:9px 16px;border-radius:999px;background:var(--chip);font-weight:600;font-size:.95rem}
+
+/* Contact */
+.contact{margin:0 auto;max-width:1120px;border-radius:32px;text-align:center;padding:84px 24px;color:#fff;position:relative;overflow:hidden;
+  background:radial-gradient(90% 140% at 15% 0%,#0a84ff 0%,#3d3bd1 50%,#8a3ffc 100%)}
+.contact h2{color:#fff}
+.contact p{color:rgba(255,255,255,.85);font-size:1.3rem;max-width:560px;margin:0 auto 32px;line-height:1.4}
+.contact .btn{background:#fff;color:#1d1d1f}
+
+footer{padding:48px 0 56px;color:var(--sub);font-size:.9rem;text-align:center}
+footer a{color:var(--sub);text-decoration:underline}
+
+/* Reveal (only when JS is present; content stays visible otherwise) */
+.js .rv{transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1)}
+.js .rv:not(.in){opacity:0;transform:translateY(18px)}
+
+@media (max-width:900px){
+  .tile.s2,.tile.s3,.tile.s4{grid-column:span 6}
+  .tile{min-height:0}.tile.dark{min-height:320px}
+  .about{grid-template-columns:1fr}
+  .links a:not(.pill){display:none}
+  .cipher{opacity:.5}
+  section{padding:72px 0}
+}
+@media (max-width:520px){
+  .field{flex-direction:column}.field button{padding:12px}
+  .tile{padding:26px}.card{padding:28px}
+  .tile.slim{flex-direction:column;align-items:flex-start}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rv{opacity:1;transform:none;transition:none}
+  .tile,.btn,.ico,#more-list li a{transition:none}
+  .tile:hover,.tile:has(a:focus-visible){transform:none}
+  .tile:hover .ico,.tile:has(a:focus-visible) .ico{transform:none}
+}
+</style>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="logo" aria-hidden="true">TH</span>Tukaram Hankare</a>
+    <nav class="links" aria-label="Main">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="pill" href="https://github.com/tukaramhankare" rel="me noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="hero" id="top">
+    <div class="wrap">
+      <h1>Tukaram Hankare</h1>
+      <p class="lead">Python and JavaScript developer building private, offline-first tools. Encryption, hashing and automation, all open source.</p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">Explore projects</a>
+        <a class="btn ghost" href="https://github.com/tukaramhankare" rel="me noopener">View on GitHub</a>
+      </div>
+
+      <div class="glass" role="group" aria-label="Live SHA-256 demo">
+        <div class="bar" aria-hidden="true"><i></i><i></i><i></i></div>
+        <label for="demo-in">Type anything to see its SHA-256 fingerprint</label>
+        <div class="field">
+          <input id="demo-in" type="text" value="Tukaram Hankare" autocomplete="off" spellcheck="false">
+          <button id="copy" type="button">Copy</button>
+        </div>
+        <output id="demo-out" for="demo-in" aria-live="polite"></output>
+        <small>Computed in your browser, the same idea behind <a href="https://github.com/tukaramhankare/file-fingerprint">File Fingerprint</a>. Nothing is sent anywhere.</small>
+      </div>
+    </div>
+  </div>
+
+  <section id="projects" aria-labelledby="projects-h">
+    <div class="wrap">
+      <div class="head rv">
+        <h2 id="projects-h">Projects</h2>
+        <p class="sub">Small tools that do one thing well. Open source, on GitHub.</p>
+      </div>
+
+      <ul class="bento">
+        <li style="--ring:#8a7dff" class="tile s4 dark rv">
+          <div class="cipher" aria-hidden="true">PBKDF2-SHA256 × 200,000
+9f2c 41ab e07d 3358 c91b
+a6e4 0d72 58fc b3a1 7e09
+3bd8 f410 92ce 6a57 d1f3
+e5a9 07b2 c84d 1f6e 3a90</div>
+          <div class="ico i-violet"><svg viewBox="0 0 24 24"><rect x="4" y="10.5" width="16" height="10" rx="2.5"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15.5" r="1.2"/></svg></div>
+          <h3><a href="https://github.com/tukaramhankare/void-vault">Void Vault</a></h3>
+          <p>Cipher encryption software that works completely offline. PBKDF2-SHA256 with 200,000 iterations, support for any file type, and a graphical interface in v3.0.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">Encryption</span><span class="tag">Offline</span></div>
+          <span class="go">View on GitHub</span>
+        </li>
+
+        <li style="--ring:#0a84ff" class="tile s2 rv">
+          <div class="ico i-blue"><svg viewBox="0 0 24 24"><path d="M9 3 7 21M17 3l-2 18M4 8.5h17M3 15.5h17"/></svg></div>
+          <h3><a href="https://github.com/tukaramhankare/file-fingerprint">File Fingerprint</a></h3>
+          <p>Client-side file fingerprinting with MD5 and SHA hashing. Your files never leave your device.</p>
+          <div class="tags"><span class="tag">JavaScript</span><span class="tag">Hashing</span></div>
+          <span class="go">View on GitHub</span>
+        </li>
+
+        <li style="--ring:#2fb8d8" class="tile s2 rv">
+          <div class="ico i-teal"><svg viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="15" rx="3"/><path d="m7.5 10 3 2.5-3 2.5M13 15h3.5"/></svg></div>
+          <h3><a href="https://github.com/tukaramhankare/TCES">TCES</a></h3>
+          <p>Template Command Execution. Save, organize and run command templates in one click, with .bat import and export. Built with Python and Tkinter.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">Desktop app</span></div>
+          <span class="go">View on GitHub</span>
+        </li>
+
+        <li style="--ring:#ff8a1f" class="tile s2 rv">
+          <div class="ico i-orange"><svg viewBox="0 0 24 24"><path d="M3.5 8.5 12 4l8.5 4.5v7L12 20l-8.5-4.5z"/><path d="m3.5 8.5 8.5 4.5 8.5-4.5M12 13v7"/></svg></div>
+          <h3><a href="https://github.com/tukaramhankare/backpack-emulator">Backpack Emulator</a></h3>
+          <p>Free online tool that sorts files into categories inside a project folder and packs them into one GitHub-ready .zip.</p>
+          <div class="tags"><span class="tag">JavaScript</span><span class="tag">Freeware</span></div>
+          <span class="go">View on GitHub</span>
+        </li>
+
+        <li style="--ring:#2fc760" class="tile s2 rv">
+          <div class="ico i-green"><svg viewBox="0 0 24 24"><rect x="2.5" y="7.5" width="17" height="9" rx="2.5"/><path d="M22 11v2M10.5 9.5 8.5 12h3l-2 2.5"/></svg></div>
+          <h3><a href="https://github.com/tukaramhankare/system-monitor-live">System Monitor Live</a></h3>
+          <p>Reminds you to keep laptop charge between low and high limits, to help batteries last longer.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">Utility</span></div>
+          <span class="go">View on GitHub</span>
+        </li>
+
+        <li style="--ring:#8e8e93" class="tile s6 slim rv">
+          <div class="ico i-gray"><svg viewBox="0 0 24 24"><path d="m4 8 8-4.5L20 8v8l-8 4.5L4 16z"/><path d="m4 8 8 4.5L20 8M12 12.5v8"/></svg></div>
+          <div class="txt">
+            <h3><a href="https://github.com/tukaramhankare/master-package">master-package</a></h3>
+            <p>A CSS project. Details are in the repository.</p>
+          </div>
+          <div class="tags"><span class="tag">CSS</span></div>
+        </li>
+      </ul>
+
+      <div class="more" id="more" hidden>
+        <h3>More from GitHub</h3>
+        <p class="note">Loaded live from <a href="https://github.com/tukaramhankare?tab=repositories">github.com/tukaramhankare</a>.</p>
+        <ul id="more-list"></ul>
+      </div>
+      <noscript><p style="text-align:center;margin-top:32px">All 20 repositories: <a href="https://github.com/tukaramhankare?tab=repositories">github.com/tukaramhankare?tab=repositories</a></p></noscript>
+    </div>
+  </section>
+
+  <section id="about" aria-labelledby="about-h" style="padding-top:24px">
+    <div class="wrap about">
+      <div class="card rv">
+        <h2 id="about-h">About Tukaram Hankare</h2>
+        <p>I learn by building. I turn clean code into working tools, and every project sharpens my problem-solving and widens my technical toolkit.</p>
+        <ul class="goals">
+          <li><span class="dot"><svg viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><div><strong>Clean code</strong><span>Readable, maintainable and efficient.</span></div></li>
+          <li><span class="dot"><svg viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><div><strong>More projects</strong><span>Expanding personal repositories and learning new frameworks.</span></div></li>
+          <li><span class="dot"><svg viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><div><strong>Daily growth</strong><span>New concepts and technical challenges every day.</span></div></li>
+        </ul>
+      </div>
+      <div class="card rv">
+        <h2>Skills</h2>
+        <div class="skill"><h3>Languages</h3><div class="chips"><span class="chip">Python</span><span class="chip">JavaScript</span><span class="chip">HTML5</span><span class="chip">CSS3</span></div></div>
+        <div class="skill"><h3>Version control</h3><div class="chips"><span class="chip">Git</span><span class="chip">GitHub</span></div></div>
+        <div class="skill" style="margin-bottom:0"><h3>Core concepts</h3><div class="chips"><span class="chip">Software architecture</span><span class="chip">Problem solving</span><span class="chip">Algorithms</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" aria-labelledby="contact-h" style="padding-top:24px">
+    <div class="wrap">
+      <div class="contact rv">
+        <h2 id="contact-h">Let's build something.</h2>
+        <p>Open to collaboration, learning opportunities and tech projects. GitHub is the best way to reach me.</p>
+        <a class="btn" href="https://github.com/tukaramhankare" rel="me noopener">github.com/tukaramhankare</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="yr">2026</span> Tukaram Hankare · <a href="https://github.com/tukaramhankare">GitHub</a></div>
+</footer>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  /* Live SHA-256 demo */
+  var inp = document.getElementById('demo-in'), out = document.getElementById('demo-out'), copy = document.getElementById('copy');
+  async function hash(){
+    try{
+      var buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(inp.value));
+      out.textContent = Array.from(new Uint8Array(buf)).map(function(b){return b.toString(16).padStart(2,'0')}).join('');
+    }catch(e){ out.textContent = 'SHA-256 needs a secure (https) page.'; }
+  }
+  inp.addEventListener('input', hash); hash();
+  copy.addEventListener('click', function(){
+    if(!navigator.clipboard) return;
+    navigator.clipboard.writeText(out.textContent).then(function(){
+      copy.textContent = 'Copied'; setTimeout(function(){ copy.textContent = 'Copy'; }, 1400);
+    });
+  });
+
+  /* Scroll reveal */
+  var items = document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ var t=e.target; t.classList.add('in'); io.unobserve(t); setTimeout(function(){ t.classList.remove('rv','in'); },1000); } });
+    },{threshold:.12, rootMargin:'0px 0px -40px 0px'});
+    items.forEach(function(el){ io.observe(el); });
+  } else { items.forEach(function(el){ el.classList.remove('rv'); }); }
+
+  /* Progressive enhancement: other repos live from GitHub.
+     The six featured projects are static HTML so Google reads them without JavaScript. */
+  var shown = ['void-vault','file-fingerprint','tces','backpack-emulator','system-monitor-live','master-package'];
+  fetch('https://api.github.com/users/tukaramhankare/repos?per_page=100&sort=updated')
+    .then(function(r){ return r.ok ? r.json() : []; })
+    .then(function(repos){
+      var rest = repos.filter(function(r){ return !r.fork && shown.indexOf(r.name.toLowerCase()) === -1; });
+      if(!rest.length) return;
+      var ul = document.getElementById('more-list');
+      rest.forEach(function(r){
+        var li = document.createElement('li'), a = document.createElement('a');
+        a.href = r.html_url;
+        var t = document.createElement('span'), n = document.createElement('span'), d = document.createElement('span');
+        n.className = 'n'; n.textContent = r.name;
+        d.className = 'd'; d.textContent = r.description || 'See the repository for details.';
+        t.appendChild(n); t.appendChild(d); a.appendChild(t);
+        if(r.language){ var l = document.createElement('span'); l.className = 'l'; l.textContent = r.language; a.appendChild(l); }
+        li.appendChild(a); ul.appendChild(li);
+      });
+      var all = document.createElement('li'), aa = document.createElement('a');
+      aa.className = 'all'; aa.href = 'https://github.com/tukaramhankare?tab=repositories'; aa.textContent = 'See all repositories on GitHub ›';
+      all.appendChild(aa); ul.appendChild(all);
+      var box = document.getElementById('more'); box.hidden = false;
+      if('IntersectionObserver' in window){ box.classList.add('rv'); box.classList.remove('in'); io.observe(box); } else { box.classList.remove('rv'); }
+    }).catch(function(){});
+})();
+</script>
+</body>
+</html>
